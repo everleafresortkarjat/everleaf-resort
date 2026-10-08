@@ -1,44 +1,293 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#153b2a">
 <meta name="description" content="Everleaf Resort, Karjat — escape and reconnect with nature. 7 AC rooms, swimming pool, lawn, dining, games and spaces for families, couples, celebrations and corporate retreats. Check availability on WhatsApp.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/everleaf-resort/">
+<link rel="canonical" href="https://everleafresortkarjat.github.io/everleaf-resort/">
 <meta property="og:title" content="Everleaf Resort, Karjat | Escape & Reconnect with Nature">
 <meta property="og:description" content="A private getaway in Karjat with 7 AC rooms, swimming pool, event lawn, dining and activities. Check availability on WhatsApp.">
 <meta property="og:type" content="website">
 <title>Everleaf Resort, Karjat | Escape & Reconnect with Nature</title>
+
 <style>
 :root{--green:#153b2a;--green2:#28543d;--cream:#f6f3eb;--paper:#fff;--ink:#17211b;--muted:#69756d;--gold:#c6a15b;--line:#e6e2d8;--wa:#25d366}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}img{display:block}
-.nav{position:absolute;inset:0 0 auto;z-index:10;padding:22px 6%;display:flex;align-items:center;justify-content:space-between;color:#fff}.logo{font:500 30px Georgia,serif}.logo small{display:block;font:700 9px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;opacity:.8}.links{display:flex;gap:25px;font-size:13px}.links a{opacity:.9}
-.hero{min-height:94vh;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.72)),url('assets/exterior-night.jpg') center/cover;display:flex;align-items:flex-end}.hero-in{width:min(1160px,88%);margin:auto;padding:150px 0 70px;color:white}.eyebrow,.kicker{font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase}.eyebrow{color:#dbe9d9}.hero h1{font:500 clamp(50px,8vw,92px)/.95 Georgia,serif;max-width:850px;margin:12px 0 18px}.hero p{max-width:650px;font-size:19px;color:#edf3ed;margin:0 0 27px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:14px 22px;font-weight:800;border:1px solid transparent;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:#fff;color:var(--green)}.wa{background:var(--wa);color:#fff;margin-left:7px}.hero-note{margin-top:19px;font-size:12px;opacity:.8}
-section{padding:88px 6%}.wrap{width:min(1160px,100%);margin:auto}.kicker{color:#6c9558}h2{font:500 clamp(38px,5vw,60px)/1.03 Georgia,serif;margin:10px 0 18px}.intro{max-width:700px;color:var(--muted);font-size:17px}.story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.story-img{height:600px;border-radius:25px;background:url('assets/pool-day.jpg') center/cover;box-shadow:0 25px 70px rgba(21,59,42,.15)}.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;border:1px solid var(--line)}.stat{padding:22px;background:var(--cream);border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;font:34px Georgia,serif;color:var(--green)}.stat span{font-size:12px;color:var(--muted)}
-.white{background:#fff}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}.feature{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff}.feature .ico{font-size:25px}.feature h3{margin:12px 0 6px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:13px}
-.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:240px;gap:12px;margin-top:35px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:16px}.gallery .big{grid-row:span 2}.gallery .wide{grid-column:span 2}
-.package{background:var(--green);color:#fff}.package h2{color:#fff}.package .kicker{color:#b9d5ae}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.card{background:#fff;color:var(--ink);padding:30px;border-radius:22px}.card h3{margin:5px 0 12px}.card p{color:var(--muted);font-size:14px}.card ul{color:var(--muted);padding-left:20px;font-size:14px}.card li{margin:6px 0}
-.cta{background:linear-gradient(110deg,rgba(21,59,42,.94),rgba(21,59,42,.68)),url('assets/pool-night.jpg') center/cover;color:#fff;text-align:center}.cta .kicker{color:#d6e7d1}.cta h2{max-width:800px;margin-left:auto;margin-right:auto}.cta p{max-width:610px;margin:0 auto 25px;color:#e6eee7}.contact{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.contact .btn{margin:0}
-footer{background:#0d291c;color:#c8d4cb;padding:38px 6%}.foot{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{font:24px Georgia,serif;color:#fff}.foot p{font-size:13px;margin:5px 0}.float{position:fixed;right:17px;bottom:17px;z-index:30;background:var(--wa);color:#fff;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 12px 35px rgba(0,0,0,.25)}
-@media(max-width:800px){.links{display:none}.story{grid-template-columns:1fr;gap:28px}.story-img{height:430px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat{border-bottom:1px solid var(--line)}.feature-grid,.cards{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gallery .wide{grid-column:span 2}}
-@media(max-width:540px){section{padding:70px 5%}.hero-in{width:90%;padding-bottom:55px}.hero h1{font-size:52px}.hero p{font-size:16px}.btn{width:100%;margin:5px 0}.wa{margin-left:0}.feature-grid,.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr;grid-auto-rows:260px}.gallery .big,.gallery .wide{grid-column:auto;grid-row:auto}.stats{grid-template-columns:1fr 1fr}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}
+img{display:block}
+
+.nav{position:absolute;inset:0 0 auto;z-index:10;padding:22px 6%;display:flex;align-items:center;justify-content:space-between;color:#fff}
+.logo{font:500 30px Georgia,serif}
+.logo small{display:block;font:700 9px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;opacity:.8}
+.links{display:flex;gap:25px;font-size:13px}
+.links a{opacity:.9}
+
+.hero{min-height:94vh;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.72)),url('exterior-night.jpg') center/cover;display:flex;align-items:flex-end}
+.hero-in{width:min(1160px,88%);margin:auto;padding:150px 0 70px;color:white}
+.eyebrow,.kicker{font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+.eyebrow{color:#dbe9d9}
+.hero h1{font:500 clamp(50px,8vw,92px)/.95 Georgia,serif;max-width:850px;margin:12px 0 18px}
+.hero p{max-width:650px;font-size:19px;color:#edf3ed;margin:0 0 27px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:14px 22px;font-weight:800;border:1px solid transparent;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:#fff;color:var(--green)}
+.wa{background:var(--wa);color:#fff;margin-left:7px}
+.hero-note{margin-top:19px;font-size:12px;opacity:.8}
+
+section{padding:88px 6%}
+.wrap{width:min(1160px,100%);margin:auto}
+.kicker{color:#6c9558}
+h2{font:500 clamp(38px,5vw,60px)/1.03 Georgia,serif;margin:10px 0 18px}
+.intro{max-width:700px;color:var(--muted);font-size:17px}
+
+.story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.story-img{height:600px;border-radius:25px;background:url('pool-day.jpg') center/cover;box-shadow:0 25px 70px rgba(21,59,42,.15)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;border:1px solid var(--line)}
+.stat{padding:22px;background:var(--cream);border-right:1px solid var(--line)}
+.stat:last-child{border:0}
+.stat b{display:block;font:34px Georgia,serif;color:var(--green)}
+.stat span{font-size:12px;color:var(--muted)}
+
+.white{background:#fff}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}
+.feature{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff}
+.feature .ico{font-size:25px}
+.feature h3{margin:12px 0 6px;font-size:17px}
+.feature p{margin:0;color:var(--muted);font-size:13px}
+
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:240px;gap:12px;margin-top:35px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.gallery .big{grid-row:span 2}
+.gallery .wide{grid-column:span 2}
+
+.package{background:var(--green);color:#fff}
+.package h2{color:#fff}
+.package .kicker{color:#b9d5ae}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}
+.card{background:#fff;color:var(--ink);padding:30px;border-radius:22px}
+.card h3{margin:5px 0 12px}
+.card p{color:var(--muted);font-size:14px}
+.card ul{color:var(--muted);padding-left:20px;font-size:14px}
+.card li{margin:6px 0}
+
+.cta{background:linear-gradient(110deg,rgba(21,59,42,.94),rgba(21,59,42,.68)),url('pool-night.jpg') center/cover;color:#fff;text-align:center}
+.cta .kicker{color:#d6e7d1}
+.cta h2{max-width:800px;margin-left:auto;margin-right:auto}
+.cta p{max-width:610px;margin:0 auto 25px;color:#e6eee7}
+.contact{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.contact .btn{margin:0}
+
+footer{background:#0d291c;color:#c8d4cb;padding:38px 6%}
+.foot{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot strong{font:24px Georgia,serif;color:#fff}
+.foot p{font-size:13px;margin:5px 0}
+
+@media(max-width:800px){
+.links{display:none}
+.story{grid-template-columns:1fr;gap:28px}
+.story-img{height:430px}
+.stats{grid-template-columns:1fr 1fr}
+.stat:nth-child(2){border-right:0}
+.stat{border-bottom:1px solid var(--line)}
+.feature-grid,.cards{grid-template-columns:1fr 1fr}
+.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+.gallery .wide{grid-column:span 2}
+}
+
+@media(max-width:540px){
+section{padding:70px 5%}
+.hero-in{width:90%;padding-bottom:55px}
+.hero h1{font-size:52px}
+.hero p{font-size:16px}
+.btn{width:100%;margin:5px 0}
+.wa{margin-left:0}
+.feature-grid,.cards{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr;grid-auto-rows:260px}
+.gallery .big,.gallery .wide{grid-column:auto;grid-row:auto}
+.stats{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
+
 <body>
-<header class="nav"><a class="logo" href="#"><small>Karjat · Maharashtra</small>Everleaf</a><nav class="links"><a href="#stay">Stay</a><a href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#packages">Packages</a><a href="#contact">Book</a></nav></header>
+
+<header class="nav">
+<a class="logo" href="#">
+<small>Karjat · Maharashtra</small>Everleaf
+</a>
+<nav class="links">
+<a href="#stay">Stay</a>
+<a href="#amenities">Amenities</a>
+<a href="#gallery">Gallery</a>
+<a href="#packages">Packages</a>
+<a href="#contact">Book</a>
+</nav>
+</header>
+
 <main>
-<section class="hero"><div class="hero-in"><div class="eyebrow">Everleaf Resort · Karjat</div><h1>Escape & reconnect with nature.</h1><p>A private getaway for pool days, long dinners, celebrations and quality time with your people.</p><a class="btn primary" href="#contact">Plan your stay</a><a class="btn wa" target="_blank" href="https://wa.me/919082650957?text=Hi%20Everleaf%20Resort!%20I%27d%20like%20to%20check%20availability.">WhatsApp us</a><div class="hero-note">Couples · Families · Celebrations · Reunions · Corporate retreats</div></div></section>
-<section id="stay"><div class="wrap story"><div><div class="kicker">A hidden getaway in Karjat</div><h2>Your own little escape in nature.</h2><p class="intro">Everleaf brings together comfortable stays, a swimming pool, a huge lawn, dining spaces and activities for groups who want to relax, celebrate and spend real time together.</p><div class="stats"><div class="stat"><b>7</b><span>AC rooms</span></div><div class="stat"><b>50–70</b><span>Guest capacity</span></div><div class="stat"><b>5G</b><span>Wi‑Fi</span></div><div class="stat"><b>1</b><span>Private getaway</span></div></div></div><div class="story-img"></div></div></section>
-<section id="amenities" class="white"><div class="wrap"><div class="kicker">Everything you need</div><h2>Come for the stay.<br>Stay for the experience.</h2><div class="feature-grid">
-<div class="feature"><div class="ico">🏊</div><h3>Swimming Pool</h3><p>Pool with fountain and underwater lighting for day-to-night fun.</p></div><div class="feature"><div class="ico">🛏️</div><h3>7 AC Rooms</h3><p>Attached bathrooms, comfortable beds and extra-bed options.</p></div><div class="feature"><div class="ico">🌿</div><h3>Huge Event Lawn</h3><p>Perfect for birthdays, reunions, team outings and celebrations.</p></div><div class="feature"><div class="ico">🍽️</div><h3>Dining & Food</h3><p>Spacious dining area with meal packages and kitchen support.</p></div><div class="feature"><div class="ico">🎶</div><h3>Music & Rain Dance</h3><p>JBL sound system, rain dance and space to celebrate.</p></div><div class="feature"><div class="ico">🎲</div><h3>Games</h3><p>Carrom, Ludo, Chess, darts, badminton, box cricket, Bingo & Housie.</p></div><div class="feature"><div class="ico">🔥</div><h3>BBQ & Bonfire</h3><p>Available on request and applicable charges.</p></div><div class="feature"><div class="ico">📺</div><h3>Modern Comforts</h3><p>5G Wi‑Fi, LED TV, geyser, RO purifier and essential amenities.</p></div><div class="feature"><div class="ico">🚗</div><h3>Private Parking</h3><p>Convenient on-site parking with caretaker support.</p></div>
-</div></div></section>
-<section id="gallery"><div class="wrap"><div class="kicker">Real photos from Everleaf</div><h2>Pool days. Dinner lights. Slow mornings.</h2><div class="gallery">
-<img class="big" src="assets/pool-day.jpg" alt="Everleaf swimming pool daytime"><img src="assets/lounge.jpg" alt="Everleaf indoor common area"><img src="assets/room-1.jpg" alt="Everleaf bedroom"><img class="wide" src="assets/exterior-night-2.jpg" alt="Everleaf resort exterior at night"><img src="assets/pool-night.jpg" alt="Everleaf pool at night"><img src="assets/dining.jpg" alt="Everleaf dining area"><img src="assets/room-2.jpg" alt="Everleaf bedroom"><img src="assets/buffet.jpg" alt="Everleaf buffet"><img src="assets/pool-mural.jpg" alt="Everleaf pool area mural"><img src="assets/exterior-night.jpg" alt="Everleaf resort garden at night">
-</div></div></section>
-<section id="packages" class="package"><div class="wrap"><div class="kicker">Easy planning</div><h2>Tell us your dates.<br>We’ll do the rest.</h2><p class="intro" style="color:#cbd9ce">Send your date, number of guests and number of nights on WhatsApp. We’ll share availability and the best available package.</p><div class="cards"><div class="card"><div class="kicker">Group stays</div><h3>Complete Resort Experience</h3><p>Ideal for families, friends and larger groups.</p><ul><li>7 AC rooms</li><li>Swimming pool & lawn</li><li>Dining & meal options</li><li>Games & common spaces</li><li>Suitable for groups up to 50–70 guests</li></ul></div><div class="card"><div class="kicker">Events & celebrations</div><h3>Private Group Getaway</h3><p>Made for birthdays, reunions, celebrations and corporate retreats.</p><ul><li>Event lawn</li><li>Music / JBL setup</li><li>Rain dance</li><li>BBQ & bonfire on request</li><li>Custom packages by date & group size</li></ul></div></div></div></section>
-<section id="contact" class="cta"><div class="wrap"><div class="kicker">Ready when you are</div><h2>Make your next getaway an Everleaf memory.</h2><p>Message us with your <b>date, guests and number of nights</b>. No forms. No waiting around.</p><div class="contact"><a class="btn wa" target="_blank" href="https://wa.me/919082650957?text=Hi%20Everleaf%20Resort!%20I%27d%20like%20to%20check%20availability.%0A%0ADate:%0AGuests:%0ANights:">Check availability on WhatsApp</a><a class="btn primary" href="tel:+919082650957">Call +91 90826 50957</a></div></div></section>
+
+<section class="hero">
+<div class="hero-in">
+<div class="eyebrow">Everleaf Resort · Karjat</div>
+<h1>Escape & reconnect with nature.</h1>
+<p>A private getaway for pool days, long dinners, celebrations and quality time with your people.</p>
+<a class="btn primary" href="#contact">Plan your stay</a>
+<a class="btn wa" target="_blank" href="https://wa.me/919082650957?text=Hi%20Everleaf%20Resort!%20I%27d%20like%20to%20check%20availability.">WhatsApp us</a>
+<div class="hero-note">Couples · Families · Celebrations · Reunions · Corporate retreats</div>
+</div>
+</section>
+
+<section id="stay">
+<div class="wrap story">
+<div>
+<div class="kicker">A hidden getaway in Karjat</div>
+<h2>Your own little escape in nature.</h2>
+<p class="intro">Everleaf brings together comfortable stays, a swimming pool, a huge lawn, dining spaces and activities for groups who want to relax, celebrate and spend real time together.</p>
+
+<div class="stats">
+<div class="stat"><b>7</b><span>AC rooms</span></div>
+<div class="stat"><b>50–70</b><span>Guest capacity</span></div>
+<div class="stat"><b>5G</b><span>Wi-Fi</span></div>
+<div class="stat"><b>1</b><span>Private getaway</span></div>
+</div>
+</div>
+
+<div class="story-img"></div>
+</div>
+</section>
+
+<section id="amenities" class="white">
+<div class="wrap">
+<div class="kicker">Everything you need</div>
+<h2>Come for the stay.<br>Stay for the experience.</h2>
+
+<div class="feature-grid">
+
+<div class="feature"><div class="ico">🏊</div><h3>Swimming Pool</h3><p>Pool with fountain and underwater lighting for day-to-night fun.</p></div>
+
+<div class="feature"><div class="ico">🛏️</div><h3>7 AC Rooms</h3><p>Attached bathrooms, comfortable beds and extra-bed options.</p></div>
+
+<div class="feature"><div class="ico">🌿</div><h3>Huge Event Lawn</h3><p>Perfect for birthdays, reunions, team outings and celebrations.</p></div>
+
+<div class="feature"><div class="ico">🍽️</div><h3>Dining & Food</h3><p>Spacious dining area with meal packages and kitchen support.</p></div>
+
+<div class="feature"><div class="ico">🎶</div><h3>Music & Rain Dance</h3><p>JBL sound system, rain dance and space to celebrate.</p></div>
+
+<div class="feature"><div class="ico">🎲</div><h3>Games</h3><p>Carrom, Ludo, Chess, darts, badminton, box cricket, Bingo & Housie.</p></div>
+
+<div class="feature"><div class="ico">🔥</div><h3>BBQ & Bonfire</h3><p>Available on request and applicable charges.</p></div>
+
+<div class="feature"><div class="ico">📺</div><h3>Modern Comforts</h3><p>5G Wi-Fi, LED TV, geyser, RO purifier and essential amenities.</p></div>
+
+<div class="feature"><div class="ico">🚗</div><h3>Private Parking</h3><p>Convenient on-site parking with caretaker support.</p></div>
+
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="wrap">
+<div class="kicker">Real photos from Everleaf</div>
+<h2>Pool days. Dinner lights. Slow mornings.</h2>
+
+<div class="gallery">
+
+<img class="big" src="pool-day.jpg" alt="Everleaf swimming pool daytime">
+
+<img src="lounge.jpg" alt="Everleaf indoor common area">
+
+<img src="room-1.jpg" alt="Everleaf bedroom">
+
+<img class="wide" src="exterior-night-2.jpg" alt="Everleaf resort exterior at night">
+
+<img src="pool-night.jpg" alt="Everleaf pool at night">
+
+<img src="dining.jpg" alt="Everleaf dining area">
+
+<img src="room-2.jpg" alt="Everleaf bedroom">
+
+<img src="buffet.jpg" alt="Everleaf buffet">
+
+<img src="pool-mural.jpg" alt="Everleaf pool area mural">
+
+<img src="exterior-night.jpg" alt="Everleaf resort garden at night">
+
+</div>
+</div>
+</section>
+
+<section id="packages" class="package">
+<div class="wrap">
+<div class="kicker">Easy planning</div>
+<h2>Tell us your dates.<br>We’ll do the rest.</h2>
+<p class="intro" style="color:#cbd9ce">Send your date, number of guests and number of nights on WhatsApp. We’ll share availability and the best available package.</p>
+
+<div class="cards">
+
+<div class="card">
+<div class="kicker">Group stays</div>
+<h3>Complete Resort Experience</h3>
+<p>Ideal for families, friends and larger groups.</p>
+<ul>
+<li>7 AC rooms</li>
+<li>Swimming pool & lawn</li>
+<li>Dining & meal options</li>
+<li>Games & common spaces</li>
+<li>Suitable for groups up to 50–70 guests</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="kicker">Events & celebrations</div>
+<h3>Private Group Getaway</h3>
+<p>Made for birthdays, reunions, celebrations and corporate retreats.</p>
+<ul>
+<li>Event lawn</li>
+<li>Music / JBL setup</li>
+<li>Rain dance</li>
+<li>BBQ & bonfire on request</li>
+<li>Custom packages by date & group size</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact" class="cta">
+<div class="wrap">
+<div class="kicker">Ready when you are</div>
+<h2>Make your next getaway an Everleaf memory.</h2>
+<p>Message us with your <b>date, guests and number of nights</b>. No forms. No waiting around.</p>
+
+<div class="contact">
+<a class="btn wa" target="_blank" href="https://wa.me/919082650957?text=Hi%20Everleaf%20Resort!%20I%27d%20like%20to%20check%20availability.%0A%0ADate:%0AGuests:%0ANights:">Check availability on WhatsApp</a>
+
+<a class="btn primary" href="tel:+919082650957">Call +91 90826 50957</a>
+</div>
+</div>
+</section>
+
 </main>
-<footer><div class="foot"><div><strong>Everleaf Resort</strong><p>Escape & reconnect with nature · Karjat, Maharashtra</p></div><div><p>WhatsApp / Call: +91 90826 50957</p><p>For enquiries: Date · Guests · Nights</p></div></div></footer>
-<a class="float" target="_blank" href="https://wa.me/919082650957?text=Hi%20Everleaf%20Resort!%20I%27d%20like%20to%20check%20availability.">WhatsApp ↗</a>
-</body></html>
+
+<footer>
+<div class="foot">
+<div>
+<strong>Everleaf Resort</strong>
+<p>Escape & reconnect with nature · Karjat, Maharashtra</p>
+</div>
+
+<div>
+<p>WhatsApp / Call: +91 90826 50957</p>
+<p>For enquiries: Date · Guests · Nights</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
